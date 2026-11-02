@@ -1,0 +1,86 @@
+[
+  {
+    "id": "d01",
+    "split": "dev",
+    "kind": "normal",
+    "question": "식비 한도와 필요한 서류는 무엇인가요?",
+    "expected": {
+      "terms": [
+        "2만원",
+        "영수증"
+      ],
+      "citations": [
+        "meal"
+      ],
+      "abstain": false
+    }
+  },
+  {
+    "id": "d02",
+    "split": "dev",
+    "kind": "normal",
+    "question": "출장 숙박비 한도는 얼마인가요?",
+    "expected": {
+      "terms": [
+        "10만원"
+      ],
+      "citations": [
+        "travel"
+      ],
+      "abstain": false
+    }
+  },
+  {
+    "id": "d03",
+    "split": "dev",
+    "kind": "boundary",
+    "question": "교육비를 받으려면 어떤 서류가 필요한가요?",
+    "expected": {
+      "terms": [
+        "영수증",
+        "수료증"
+      ],
+      "citations": [
+        "training"
+      ],
+      "abstain": false
+    }
+  },
+  {
+    "id": "d04",
+    "split": "dev",
+    "kind": "unanswerable",
+    "question": "재택근무 지원금은 얼마인가요?",
+    "expected": {
+      "terms": [],
+      "citations": [],
+      "abstain": true
+    }
+  },
+  {
+    "id": "t01",
+    "split": "holdout",
+    "kind": "normal",
+    "question": "교육비 지원 한도는 얼마인가요?",
+    "expected": {
+      "terms": [
+        "20만원"
+      ],
+      "citations": [
+        "training"
+      ],
+      "abstain": false
+    }
+  },
+  {
+    "id": "t02",
+    "split": "holdout",
+    "kind": "unanswerable",
+    "question": "반려동물 의료비도 지원되나요?",
+    "expected": {
+      "terms": [],
+      "citations": [],
+      "abstain": true
+    }
+  }
+]
